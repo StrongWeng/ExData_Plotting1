@@ -19,7 +19,7 @@ lines(quiz$datetime,quiz$Sub_metering_2,col="red")
 lines(quiz$datetime,quiz$Sub_metering_3,col="blue")
 legend("topright",legend=c("Sub_metering_1","Sub_metering_2",
     "Sub_metering_3"),col=c("black","red","blue"),lty=1,
-    cex=0.4,y.intersp=0.3,x.intersp=0.2)
+    cex=0.8,y.intersp=0.3,x.intersp=0.2,bty="n")
 plot(quiz$datetime,quiz$Voltage,type="l",xlab="datetime",ylab="Voltage")
 plot(quiz$datetime,quiz$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 dev.copy(png,file="png4.png",width=480,height=480);dev.off()
